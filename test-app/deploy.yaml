@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-app
+      app: my-app1
   template:
     metadata:
       labels:
-        app: my-app
+        app: my-app1
     spec:
       containers:
-      - name: my-app
+      - name: my-app1
         image: maheshnichenakolla/k8s-test:latest  # Replace with your image URL
         ports:
         - containerPort: 8000
